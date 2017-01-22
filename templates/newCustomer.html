@@ -1,8 +1,7 @@
 {% extends "layout.html" %}
 {% block title %}New Customer{% endblock %}
 
-{% block body %}
-<form action="{{ url_for('newCustomer') }}" method = 'post' enctype=multipart/form-data>
+{% block body %}<form action="{{ url_for('newCustomer') }}" method = 'post' enctype=multipart/form-data>
   Name:<br>
   <input type="text" name="name"><br>
   Email Address:<br>
